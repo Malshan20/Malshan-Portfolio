@@ -12,25 +12,29 @@ export default function Hero() {
 
   useEffect(() => {
     // 3D Rotation Animation for the Ring
-    gsap.to(ringRef.current, {
-      rotationY: 360,
-      duration: 10,
-      repeat: -1,
-      ease: "linear",
-    });
+    if (ringRef.current) {
+      gsap.to(ringRef.current, {
+        rotationY: 360,
+        duration: 10,
+        repeat: -1,
+        ease: "linear",
+      });
+    }
 
     // Fade and slide animation for the Hero Text
-    gsap.fromTo(
-      textRef.current?.children,
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.5,
-        ease: "power3.out",
-        stagger: 0.2,
-      }
-    );
+    if (textRef.current?.children) {
+      gsap.fromTo(
+        textRef.current.children,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1.5,
+          ease: "power3.out",
+          stagger: 0.2,
+        }
+      );
+    }
   }, []);
 
   return (
