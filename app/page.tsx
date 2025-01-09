@@ -1,23 +1,18 @@
 import AnimatedHeader from "@/components/animated-header"
-import SunburstLogo from "@/components/sunburst-logo"
 import SiteReliability from "@/components/site-reliability"
 import ProjectSlider from "@/components/project-slider"
 import AboutMe from "@/components/about-me"
 import AnimatedSkills from "@/components/animated-skills"
 import Portfolio from "@/components/portfolio"
 import Footer from "@/components/footer-portfolio"
-import Hero from "@/components/Hero"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <AnimatedHeader />
       <div>
-
       </div>
       <div className="flex flex-col items-center justify-center min-h-screen gap-20 p-4">
-        
-        {/* <Hero/> */}
         <SiteReliability />
       </div>
       <AboutMe />
@@ -29,7 +24,6 @@ export default function Home() {
       </div>
       <Footer/>
     </main>
-    
   )
 }
 

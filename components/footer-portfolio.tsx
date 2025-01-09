@@ -67,7 +67,7 @@ export default function Footer() {
             />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/maleesha-dissanayaka-6a116933a/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon w-10 h-10 flex items-center justify-center bg-gray-200 rounded-full shadow-md hover:bg-purple-100 hover:shadow-lg transition-all duration-300"

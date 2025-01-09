@@ -9,6 +9,12 @@ export default function ProjectSlider() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const projects = [
     {
+      title: "Gamifyed",
+      description: "just started working on new project that is a education system web app , students will love.",
+      image: "/project4.png",
+      githubLink: "https://github.com/Malshan20/gamifyed.git", // GitHub link
+    },
+    {
       title: "Valorant Game",
       description: "A Web Site For Valorant Game as a Best Fan Of Valorant Game",
       image: "/project1.png",
